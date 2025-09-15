@@ -1,36 +1,29 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: scavalli <scavalli@student.42nice.fr>      +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/03/03 22:51:05 by scavalli          #+#    #+#              #
-#    Updated: 2025/05/09 17:59:04 by scavalli         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
+NAME		=	philo
 
-FILE =  main.c utils.c thread_process.c
-NAME = philo
-CC = clang
-CFLAGS = -Wall -Wextra -Werror -g3
-SRCS = $(FILE)
-OBJS = ${SRCS:.c=.o}
+HEADER		=	./include/
 
-.PHONY: all clean fclean re
+CC			=	gcc
 
-all: $(NAME)
+CFLAGS		=	-Werror -Wall -Wextra -g -I $(HEADER) -pthread
 
-.c.o:
-	$(CC) $(CFLAGS) -c $< -o $@
+SRCS		=	srcs/main.c \
+				srcs/activity.c \
+				srcs/threads.c \
+				srcs/init_and_parse.c \
+				srcs/utils_philo.c \
+				srcs/utils_lib.c \
 
-$(NAME): $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
+OBJS		=	$(SRCS:.c=.o)
 
-clean:
-	rm -f $(OBJS) $(OBJS_BONUS)
+all			:	$(NAME)
 
-fclean: clean
-	rm -f $(NAME) $(BONUS_NAME)
+$(NAME)		:	$(OBJS) $(HEADER)
+				$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 
-re: fclean all
+clean		:
+				rm -rf $(OBJS)
+
+fclean		:	clean
+				rm -rf $(NAME)
+
+re			:	fclean all
