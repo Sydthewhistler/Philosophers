@@ -6,11 +6,11 @@
 /*   By: scavalli <scavalli@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 15:34:19 by scavalli          #+#    #+#             */
-/*   Updated: 2025/05/09 17:55:51 by scavalli         ###   ########.fr       */
+/*   Updated: 2026/05/07 12:44:20 by scavalli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
+#include "../header/header.h"
 
 int	is_dead(struct timeval meal_date, t_targs *thread_args)
 {

@@ -6,11 +6,11 @@
 #    By: scavalli <scavalli@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/03 22:51:05 by scavalli          #+#    #+#              #
-#    Updated: 2025/05/09 17:59:04 by scavalli         ###   ########.fr        #
+#    Updated: 2026/05/07 12:43:57 by scavalli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-FILE =  main.c utils.c thread_process.c
+FILE =  src/main.c src/utils.c src/thread_process.c
 NAME = philo
 CC = clang
 CFLAGS = -Wall -Wextra -Werror -g3

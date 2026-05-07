@@ -6,11 +6,11 @@
 /*   By: scavalli <scavalli@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 12:50:02 by scavalli          #+#    #+#             */
-/*   Updated: 2025/05/09 17:35:43 by scavalli         ###   ########.fr       */
+/*   Updated: 2026/05/07 12:44:13 by scavalli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
+#include "../header/header.h"
 
 void	create_threads_args(t_targs *thread_args, int ac, char **av, t_end *is_dead)
 {

@@ -6,11 +6,11 @@
 /*   By: scavalli <scavalli@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 16:58:45 by scavalli          #+#    #+#             */
-/*   Updated: 2025/05/09 17:57:39 by scavalli         ###   ########.fr       */
+/*   Updated: 2026/05/07 12:44:25 by scavalli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
+#include "../header/header.h"
 
 long	time_c(t_targs *thread_args)
 {
